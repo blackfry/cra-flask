@@ -1,6 +1,8 @@
 # cra-flask #
 
-Boilerplate application for a Flask JWT Backend and a React/Redux Front-End with Material UI.
+Boilerplate application for a Flask JWT Backend and an unejected React/Redux Front-End with Material UI. 
+
+A Create-React-App conversion of [React-Redux-Flask](https://github.com/dternyak/React-Redux-Flask)
 
 * Python 2.7+ or 3.x
 * Pytest
@@ -8,11 +10,10 @@ Boilerplate application for a Flask JWT Backend and a React/Redux Front-End with
 * Flask
 * React
 * Redux
-* React-Router 2.0
+* React-Router v4
 * React-Router-Redux
-* Babel 6
 * SCSS processing
-* Webpack
+* Create-React-App
 
 ![screenshot](http://i.imgur.com/ZIS4qkw.png)
 
@@ -44,7 +45,7 @@ $ python manage.py db upgrade
 ### Install Front-End Requirements
 ```sh
 $ cd static
-$ npm install
+$ yarn install
 ```
 
 ### Run Back-End
@@ -63,13 +64,13 @@ $ python test.py --cov-report=term --cov-report=html --cov=application/ tests/
 
 ```sh
 $ cd static
-$ npm start
+$ yarn start
 ```
 
 ### Build Front-End
 
 ```sh
-$ npm run build:production
+$ yarn build
 ```
 
 ### New to Python?
@@ -127,8 +128,8 @@ If all goes well, you should see ```* Running on http://127.0.0.1:5000/ (Press C
 
 ```
 $ cd static
-$ npm install
-$ npm start
+$ yarn install
+$ yarn start
 ```
 
 6. open your browser to http://localhost:3000/register and setup your first account
