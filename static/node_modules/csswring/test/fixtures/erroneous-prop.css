@@ -1,8 +1,0 @@
-.foo {
-  --色: green;
-  color: green;
-  _color: red;
-  *color: red;
-  !color: red;
-  colo!r: red;
-}

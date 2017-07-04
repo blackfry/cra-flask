@@ -1,7 +1,0 @@
-*.log
-node_modules
-src
-test
-coverage
-karma*
-.eslintrc

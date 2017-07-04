@@ -1,9 +1,0 @@
-*.foo,
-.foo *.foo,
-*#bar,
-#bar *#bar,
-*[baz],
-[baz] *[baz],
-*:link {
-  color: red;
-}
