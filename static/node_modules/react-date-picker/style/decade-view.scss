@@ -1,0 +1,14 @@
+.react-date-picker__decade-view {
+  box-sizing: border-box;
+  outline: none;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+  &-year {
+    text-align: center;
+  }
+}

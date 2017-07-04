@@ -1,0 +1,14 @@
+:local(.styles) {
+  position: fixed;
+  z-index: 2;
+
+  width: 100%;
+
+  bottom: 30px;
+
+  text-align: center;
+
+  a {
+    color: #FFF;
+  }
+}

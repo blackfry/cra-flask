@@ -1,0 +1,10 @@
+.react-date-picker__calendar--theme-#{$THEME_NAME} {
+  border: 1px solid $VIEW_BORDER_COLOR;
+  .#{$base}--theme-#{$THEME_NAME} {
+    border: none;
+  }
+
+  .react-date-picker__clock {
+    margin: 10px;
+  }
+}

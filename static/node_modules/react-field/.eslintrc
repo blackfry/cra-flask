@@ -1,0 +1,44 @@
+{
+  "rules": {
+    "semi-spacing": [2, {"before": false, "after": true }],
+    "comma-spacing": [2, {"before": false, "after": true}],
+    "key-spacing": [1, {"beforeColon": false, "afterColon": true}],
+    "no-extra-semi": 2,
+    "semi": [1, "never"],
+
+    "no-unused-vars": [2, {"vars": "all", "args": "after-used", "varsIgnorePattern": "React"}],
+
+    "indent": [
+      2,
+      2
+    ],
+    "no-undef": 2,
+    "quotes": [
+      2,
+      "single"
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "react/prop-types": 1
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true,
+    "spread": true,
+    "restParams": true,
+    "arrowFunctions": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true
+  },
+  "plugins": [
+    "react"
+  ]
+}

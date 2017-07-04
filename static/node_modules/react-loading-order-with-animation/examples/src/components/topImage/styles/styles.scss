@@ -1,0 +1,54 @@
+:local(.styles) {
+  position: relative;
+  
+  background: #7db329;
+
+  height: 100%;
+
+  h1.title {
+    color: #FFF;
+    font-size: 40px;
+
+    margin-top: 13%;
+  }
+
+  .features {
+    color: #FFF;
+
+    margin-top: 130px;
+    
+    $size: 120px;
+
+    .easy {
+      width: $size;
+      height: $size;
+      display: inline-block;
+
+      background: url(../files/easy.svg);
+      background-size: cover;
+    }
+
+    .smart {
+      width: $size;
+      height: $size;
+      display: inline-block;
+
+      background: url(../files/smart.svg);
+      background-size: cover;
+    }
+
+    .fun {
+      width: $size;
+      height: $size;
+      display: inline-block;
+
+      background: url(../files/fun.svg);
+      background-size: cover;
+    }
+
+    h3 {
+      margin-top: 40px;
+      opacity: .7;
+    }
+  }
+}

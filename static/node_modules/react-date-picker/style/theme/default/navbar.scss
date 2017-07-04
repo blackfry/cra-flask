@@ -1,0 +1,40 @@
+.react-date-picker__nav-bar--theme-#{$THEME_NAME} {
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  font-size: 1.2rem;
+
+  .react-date-picker__nav-bar-secondary-arrow {
+    margin-right: 7px;
+  }
+
+  .react-date-picker__nav-bar-history-view {
+    background: white;
+  }
+
+  &.react-date-picker__nav-bar--with-history-view {
+    .react-date-picker__nav-bar-date {
+      cursor: pointer;
+    }
+  }
+
+  .react-date-picker__nav-bar-arrow {
+    position: relative;
+    fill: $NAV_BAR_ARROW_COLOR;
+
+    &--disabled {
+      fill: $NAV_BAR_ARROW_COLOR_DISABLED;
+    }
+
+    &:not(.react-date-picker__nav-bar-arrow--disabled) {
+      &:hover {
+        fill: $NAV_BAR_ARROW_COLOR_HOVER;
+      }
+
+      &:active {
+        top: 1px;
+      }
+    }
+  }
+}

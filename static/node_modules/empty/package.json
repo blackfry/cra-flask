@@ -1,0 +1,35 @@
+{
+  "name": "empty",
+  "version": "0.10.1",
+  "description": "Utility that provides different types of empty objects.",
+  "keywords": [
+    "empty",
+    "noop"
+  ],
+  "scripts": {
+    "test": "jshint index.js tests.js && jscs index.js tests.js && testem ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iclanzan/empty.git"
+  },
+  "author": "Sorin Iclanzan <sorin@iclanzan.com> (http://iclanzan.com/)",
+  "bugs": {
+    "url": "https://github.com/iclanzan/empty/issues"
+  },
+  "homepage": "https://github.com/iclanzan/empty",
+  "license": "MIT",
+  "browserify": {
+    "transform": [
+      "envify"
+    ]
+  },
+  "devDependencies": {
+    "jscs": "^1.11.3",
+    "jshint": "^2.6.3",
+    "tape": "^3.5.0"
+  },
+  "dependencies": {
+    "envify": "^3.4.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "name": "react-date-picker",
+  "version": "5.3.28",
+  "description": "A carefully crafted date picker for React",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint src/**",
+    "dev": "webpack-dev-server --progress --config build/webpack.config.js",
+    "styles": "theme-builder",
+    "lib": "rimraf lib && npm run babel",
+    "babel": "babel --out-dir lib src",
+    "build": "npm run styles && npm run lib",
+    "prepublish": "npm run build"
+  },
+  "contributors": [],
+  "author": "ZippyUI <contact@zippyui.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.throttle": "^4.0.1",
+    "object-assign": "4.0.1",
+    "raf": "3.2.0",
+    "react-class": "2.0.0",
+    "react-field": "2.0.2",
+    "react-flex": "2.2.7",
+    "react-inline-block": "2.0.0",
+    "react-notify-resize": "1.0.3",
+    "react-style-normalizer": "1.2.8"
+  },
+  "peerDependencies": {
+    "react": ">=0.14.0 || >=15.0.0",
+    "react-dom": ">=0.14.0 || >=15.0.0",
+    "moment": ">=2.8.0"
+  },
+  "devDependencies": {
+    "react": ">=0.14.0 || >=15.0.0",
+    "react-dom": ">=0.14.0 || >=15.0.0",
+    "autoprefixer-loader": "^3.2.0",
+    "babel-cli": "^6.7.7",
+    "babel-core": "^6.5.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.15.5",
+    "eslint": "^2.10.2",
+    "eslint-config-zippyui": "^1.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.4",
+    "json-loader": "^0.5.2",
+    "mocha": "^2.2.4",
+    "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.5.3",
+    "react-hot-loader": "^1.2.8",
+    "rimraf": "^2.5.2",
+    "sass-loader": "^3.2.0",
+    "should": "^6.0.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1",
+    "zippyui-theme-builder": "^1.0.2"
+  },
+  "keywords": [
+    "date",
+    "picker",
+    "date-picker",
+    "react",
+    "react-date-picker",
+    "react-component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zippyui/react-date-picker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zippyui/react-date-picker/issues"
+  },
+  "homepage": "https://github.com/zippyui/react-date-picker"
+}

@@ -1,0 +1,30 @@
+$base: 'react-date-picker__year-view';
+
+.#{$base}--theme-#{$THEME_NAME} {
+  border: 1px solid gray;
+  padding: 2px;
+
+  .#{$base}-month {
+    padding: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+
+    &--disabled {
+      color: $DAY_COLOR_DISABLED;
+    }
+  }
+
+  .#{$base}-month--active {
+    border: 2px solid $ACTIVE_COLOR;
+  }
+
+  .#{$base}-month--value {
+    color: white;
+    background: $ACTIVE_COLOR padding-box;
+    border: 2px solid $ACTIVE_COLOR;
+  }
+
+  .#{$base}-month--active.#{$base}-month--value {
+    background: lighten($ACTIVE_COLOR, 5%) padding-box;
+  }
+}

@@ -1,0 +1,31 @@
+:local(.styles) {
+  position: relative;
+
+  &.inline {
+    display: inline-block;
+  }
+
+  &.fade-in {
+    opacity: 0;
+
+    &.loaded {
+      opacity: 1;
+    }
+  }
+
+  &.from-top-to-bottom, &.from-bottom-to-top {
+    position: relative;
+
+    &.loaded {
+      top: 0 !important;
+    }
+  }
+
+  &.from-left-to-right, &.from-right-to-left {
+    position: relative;
+
+    &.loaded {
+      left: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.react-date-field--theme-#{$THEME_NAME} {
+  border: 1px solid $FIELD_BORDER_COLOR;
+
+  &.react-date-field--focused {
+    border: 1px solid $ACTIVE_COLOR;
+  }
+
+  & > .react-date-field__picker {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.34375);
+    border: 1px solid $ACTIVE_COLOR;
+  }
+
+  .react-date-field__calendar-icon {
+    border: 2px solid $CALENDAR_ICON_COLOR;
+
+    &:before,
+    &:after {
+      width: 2px;
+      height: 5px;
+      top: -5px;
+    }
+
+    &:before {
+      left: 2px;
+    }
+
+    &:after {
+      right: 1px;
+      left: auto;
+    }
+  }
+
+  .react-date-field__clear-icon {
+    color: $CLEAR_ICON_COLOR;
+    fill: $CLEAR_ICON_COLOR;
+  }
+
+  .react-date-field__clear-icon:hover {
+    color: $CLEAR_ICON_COLOR_HOVER;
+    fill: $CLEAR_ICON_COLOR_HOVER;
+  }
+
+  &.react-date-field--focused .react-date-field__clear-icon {
+    color: $CLEAR_ICON_COLOR_ACTIVE;
+    fill: $CLEAR_ICON_COLOR_ACTIVE;
+  }
+
+  &:not(.react-date-field--disabled) {
+    .react-date-field__calendar-icon:hover {
+      border-color: $CALENDAR_ICON_COLOR_HOVER;
+      cursor: pointer;
+
+      &:after,
+      &:before,
+      .react-date-field__calendar-icon-inner {
+        background: $CALENDAR_ICON_COLOR_HOVER;
+      }
+    }
+  }
+
+  .react-date-field__calendar-icon:after,
+  .react-date-field__calendar-icon:before {
+    background: $CALENDAR_ICON_COLOR;
+  }
+
+  .react-date-field__calendar-icon-inner {
+    background: $CALENDAR_ICON_COLOR;
+  }
+
+  &.react-date-field--focused .react-date-field__calendar-icon,
+  &.react-date-field--focused .react-date-field__calendar-icon:hover,
+  &.react-date-field--focused .react-date-field__calendar-icon:active,
+  &:not(.react-date-field--disabled) .react-date-field__calendar-icon:active {
+    border-color: $CALENDAR_ICON_COLOR_ACTIVE;
+
+    &:after,
+    &:before,
+    .react-date-field__calendar-icon-inner {
+      background: $CALENDAR_ICON_COLOR_ACTIVE;
+    }
+  }
+}

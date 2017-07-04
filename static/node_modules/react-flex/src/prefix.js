@@ -1,0 +1,1 @@
+export default 'react-flex-v2'

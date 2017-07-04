@@ -1,0 +1,25 @@
+{
+  "name": "sass-flex-mixins",
+  "version": "0.1.0",
+  "authors": [
+    "Giovanni Gonzaga <giovanni@buildo.io>"
+  ],
+  "description": "sass flex cross-browser mixins",
+  "main": "dist/sass-flex-mixins.scss",
+  "keywords": [
+    "sass",
+    "scss",
+    "flex",
+    "mixin",
+    "flexbox"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/buildo/sass-flex-mixins",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,27 @@
+$baseCls: 'react-date-picker__date-format-spinner';
+
+.#{$baseCls}--theme-#{$THEME_NAME} {
+  border: 1px solid gray;
+
+  input {
+    padding: 5px;
+    border: none;
+    outline: none;
+  }
+
+  &:not([disabled]) {
+    &.#{$baseCls}--focused {
+      border: 1px solid $ACTIVE_COLOR;
+    }
+
+    .#{$baseCls}-arrow {
+      position: relative;
+      cursor: pointer;
+
+      &:active {
+        fill: $ACTIVE_COLOR;
+        top: 1px;
+      }
+    }
+  }
+}
