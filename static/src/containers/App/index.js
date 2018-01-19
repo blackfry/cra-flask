@@ -24,14 +24,17 @@ class Main extends Component {
 
   componentWillMount() {
     let result = (checkAuth()
-    .then(response => {
-      return response.status === 200
-        })
+      .then(response => {
+        if (response.status === 200) {
+            that.props.loginUserSuccess(localStorage.getItem('token'));
+            that.setState({ loaded: true });
+        }
+      })
     )
     
     if (result) {
-      this.props.loginUserSuccess(localStorage.getItem('token'));
-      this.setState({ loaded: true });
+      this.props.loginUserSuccess(localStorage.getItem('token'))
+      this.setState({ loaded: true })
     }
   }
 
