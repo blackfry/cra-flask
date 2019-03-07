@@ -36,9 +36,9 @@ class TestAPI(BaseTestConfig):
 
         self.assertEqual(res2.status_code, 409)
 
-    def test_get_token_and_verify_token(self):
+    def test_getToken_and_verify_token(self):
         res = self.app.post(
-                "/api/get_token",
+                "/api/getToken",
                 data=json.dumps(self.default_user),
                 content_type='application/json'
         )
@@ -64,7 +64,7 @@ class TestAPI(BaseTestConfig):
         self.assertEqual(res3.status_code, 403)
 
         res4 = self.app.post(
-                "/api/get_token",
+                "/api/getToken",
                 data=json.dumps(self.some_user),
                 content_type='application/json'
         )

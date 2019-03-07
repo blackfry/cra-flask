@@ -1,0 +1,45 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react", "prettier"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb", "prettier", "prettier/react"],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/mouse-events-have-key-events": "off",
+    "react/prop-types": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-filename-extension": "off",
+    "react/forbid-prop-types": "off",
+    "react/destructuring-assignment": "warn",
+    "prettier/prettier": ["error", { "singleQuote": true, "semi": true, "printWidth": 120 }],
+    "class-methods-use-this": "off",
+    "import/extensions": "off",
+    "no-underscore-dangle": "off",
+    "no-shadow": "off",
+    "no-nested-ternary": "off",
+    "no-restricted-syntax": "off",
+    "prefer-destructuring": "warn"
+  },
+  "globals": {
+    "describe": true,
+    "before": true,
+    "beforeEach": true,
+    "after": true,
+    "afterEach": true,
+    "it": true,
+    "xit": true
+  }
+}

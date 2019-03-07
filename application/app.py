@@ -43,8 +43,8 @@ def create_user():
     )
 
 
-@app.route("/api/get_token", methods=["POST"])
-def get_token():
+@app.route("/api/getToken", methods=["POST"])
+def getToken():
     incoming = request.get_json()
     user = User.get_user_with_email_and_password(incoming["email"], incoming["password"])
     if user:

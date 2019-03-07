@@ -42,12 +42,6 @@ To update database after creating new migrations, use:
 $ python manage.py db upgrade
 ```
 
-### Install Front-End Requirements
-```sh
-$ cd static
-$ yarn install
-```
-
 ### Run Back-End
 
 ```sh
@@ -60,17 +54,17 @@ $ python manage.py runserver
 $ python test.py --cov-report=term --cov-report=html --cov=application/ tests/
 ```
 
+### Install Front-End Requirements
+```sh
+$ cd react-ui
+$ yarn install
+```
+
 ### Run Front-End
 
 ```sh
-$ cd static
+$ cd react-ui
 $ yarn start
-```
-
-### Build Front-End
-
-```sh
-$ yarn build
 ```
 
 ### New to Python?
@@ -127,14 +121,10 @@ If all goes well, you should see ```* Running on http://127.0.0.1:5000/ (Press C
 5. open a new tab to the same directory and run the front end
 
 ```
-$ cd static
+$ cd react-ui
 $ yarn install
 $ yarn start
 ```
 
 6. open your browser to http://localhost:3000/register and setup your first account
 7. enjoy! By this point, you should be able to create an account and login without errors. 
-
-
-
-
