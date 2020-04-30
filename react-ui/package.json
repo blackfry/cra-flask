@@ -16,7 +16,7 @@
     "gapi": "0.0.3",
     "history": "^4.7.2",
     "http-proxy": "^1.17.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jwt-decode": "^2.2.0",
     "less": "^3.9.0",
     "lodash": "^4.17.11",
